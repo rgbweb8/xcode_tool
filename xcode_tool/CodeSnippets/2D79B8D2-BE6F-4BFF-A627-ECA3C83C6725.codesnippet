@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TableView alloc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    _tableView = [[UITableViewCustom alloc] initWithFrame:self.view.bounds
+                                                    style:UITableViewStylePlain];
+    [self.view addSubview:_tableView];
+    _tableView.dataSource = self;
+    _tableView.delegate   = self;
+    _tableView.autoresizingMask = UIAutoSizeMaskAll;
+    _tableView.allowsSelection  = YES;
+    _tableView.rowHeight        = [WBJUIFont tableViewRowHeight];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2D79B8D2-BE6F-4BFF-A627-ECA3C83C6725</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableView alloc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wHttpClient</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    [wProgressView showInfo:LocalizedString(@"Submit...") InView:self.view];  //正在提交...
+    WEAK_SELF;
+    
+    wHttpClient *client = [wHttpClient httpWithReceived:^(NSDictionary *dict, NSInteger code) {
+        STRONG_SELF;
+        if (SocketSuccessCode == code) {
+            &lt;#statements#&gt;;
+        }
+        [wProgressView closeInView:sself.view];
+    } Fail:^(NSError *error) {
+        STRONG_SELF;
+        [wProgressView closeInView:sself.view];
+    }];
+    [client &lt;#statements#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70100EE5-CF1F-4D50-909C-A18499B1941F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wHttpClient requet</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wHttpClient requet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

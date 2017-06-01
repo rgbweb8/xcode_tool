@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wHttpClient</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    WEAK_SELF;
+    wHttpClient *client = [wHttpClient httpWithReceived:^(NSDictionary *dict, NSInteger code) {
+        STRONG_SELF;
+        if (SocketSuccessCode == code) {
+            &lt;#statements#&gt;;
+        }
+    } Fail:^(NSError *error) {
+        STRONG_SELF;
+        &lt;#statements#&gt;;
+    }];
+    [client &lt;#statements#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>421F3C35-E93D-4A03-9337-8292A7279A31</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>wHttp Requet Back</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wHttp Requet Back</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
